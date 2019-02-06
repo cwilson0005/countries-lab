@@ -1,5 +1,9 @@
 body {
-  background-color: lightgrey;
+  background-color: black;
+}
+
+p {
+  color:white;
 }
 
 .medium-image {
@@ -9,17 +13,24 @@ body {
 
 .title {
   font-family: 'Orbitron', sans-serif;
+  color: white;
   font-size: 30px;
   text-align: center;
 }
 
 h1 {
   padding-bottom: 5px;
+  color: white;
 }
 
 .dropdown {
   font-family: 'Orbitron', sans-serif;
   text-align: center;
+  color: white;
+}
+
+.country {
+  color:white;
 }
 
 /* background: linear-gradient(88deg, #d42525, #ffffff, #4031cf);
