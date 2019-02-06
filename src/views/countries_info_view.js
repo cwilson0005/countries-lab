@@ -14,7 +14,21 @@ CountriesInfoView.prototype.bindEvents = function () {
 CountriesInfoView.prototype.render = function(country){
   const infoParagraph = document.createElement('p');
   const img = this.createImage(country);
-  infoParagraph.textContent = `Country name: ${country.name} | Country region: ${country.region}`;
+  const languageDetails = country.languages;
+  console.log(languageDetails);
+
+  // for (let language of languageDetails){
+  //   console.log(language.name);
+  //   return language.name;
+  // }
+
+  const languageNameArray = [];
+
+  for (let language of languageDetails){
+    languageNameArray.push(language.name);
+  }
+
+  infoParagraph.textContent = `Country name: ${country.name} | Country region: ${country.region} | languages: ${languageNameArray}`;
   this.container.innerHTML = '';
   this.container.appendChild(infoParagraph);
   this.container.appendChild(img);
