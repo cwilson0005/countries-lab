@@ -13,9 +13,18 @@ CountriesInfoView.prototype.bindEvents = function () {
 
 CountriesInfoView.prototype.render = function(country){
   const infoParagraph = document.createElement('p');
-  infoParagraph.textContent = `Country name: ${country.name} | Country region: ${country.region} | Country flag: ${country.flag}`;
+  const img = this.createImage(country);
+  infoParagraph.textContent = `Country name: ${country.name} | Country region: ${country.region}`;
   this.container.innerHTML = '';
   this.container.appendChild(infoParagraph);
+  this.container.appendChild(img);
+};
+
+CountriesInfoView.prototype.createImage = function(country){
+  const img = document.createElement('img');
+  img.classList.add('medium-image');
+  img.src = country.flag;
+  return img;
 };
 
 module.exports = CountriesInfoView;
