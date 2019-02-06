@@ -1,4 +1,47 @@
+body {
+  background-color: lightgrey;
+}
+
 .medium-image {
   width: 30vw;
   min-width: 293px;
 }
+
+.title {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+h1 {
+  padding-bottom: 5px;
+}
+
+.dropdown {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+}
+
+/* background: linear-gradient(88deg, #d42525, #ffffff, #4031cf);
+background-size: 600% 600%;
+
+-webkit-animation: RedWhiteBlue 29s ease infinite;
+-moz-animation: RedWhiteBlue 29s ease infinite;
+animation: RedWhiteBlue 29s ease infinite;
+
+@-webkit-keyframes  */
+/* RedWhiteBlue {
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+@-moz-keyframes RedWhiteBlue {
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+}
+@keyframes RedWhiteBlue {
+    0%{background-position:49% 0%}
+    50%{background-position:52% 100%}
+    100%{background-position:49% 0%}
+} */

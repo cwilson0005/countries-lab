@@ -28,10 +28,11 @@ CountriesInfoView.prototype.render = function(country){
     languageNameArray.push(language.name);
   }
 
-  infoParagraph.textContent = `Country name: ${country.name} | Country region: ${country.region} | languages: ${languageNameArray}`;
+  infoParagraph.textContent = `Country name: ${country.name} | Country region: ${country.region} | languages: ${languageNameArray} `;
   this.container.innerHTML = '';
   this.container.appendChild(infoParagraph);
   this.container.appendChild(img);
+  this.container.setAttribute("align", "center");
 };
 
 CountriesInfoView.prototype.createImage = function(country){
